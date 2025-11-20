@@ -10,3 +10,4 @@ class NGO:
 
     def __repr__(self):
         return f"<NGO {self.ngoID}: {self.orgName}>"
+    # models/ngo.py
