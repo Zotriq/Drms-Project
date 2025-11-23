@@ -7,6 +7,7 @@ from api.volunteer_routes import volunteer_bp
 from api.resource_routes import resource_bp 
 from api.victim_routes import victim_bp
 from api.priorityzone_routes import priorityzone_bp
+from api.shelter_routes import shelter_bp
 app = Flask(__name__)   # <-- CREATE APP FIRST
 
 # OPTIONAL: Debug route
@@ -23,5 +24,6 @@ app.register_blueprint(volunteer_bp)
 app.register_blueprint(resource_bp)  
 app.register_blueprint(victim_bp)
 app.register_blueprint(priorityzone_bp)
+app.register_blueprint(shelter_bp)
 if __name__ == "__main__":
     app.run(debug=True)
