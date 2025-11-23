@@ -10,6 +10,8 @@ from api.priorityzone_routes import priorityzone_bp
 from api.shelter_routes import shelter_bp
 from api.task_routes import task_bp
 from api.notification_routes import notification_bp
+from api.auditlog_routes import auditlog_bp
+from api.report_routes import report_bp
 app = Flask(__name__)   # <-- CREATE APP FIRST
 
 # OPTIONAL: Debug route
@@ -28,5 +30,7 @@ app.register_blueprint(victim_bp)
 app.register_blueprint(priorityzone_bp)
 app.register_blueprint(task_bp)
 app.register_blueprint(notification_bp)
+app.register_blueprint(auditlog_bp)
+app.register_blueprint(report_bp)
 if __name__ == "__main__":
     app.run(debug=True)
