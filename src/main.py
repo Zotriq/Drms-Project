@@ -32,5 +32,7 @@ app.register_blueprint(task_bp)
 app.register_blueprint(notification_bp)
 app.register_blueprint(auditlog_bp)
 app.register_blueprint(report_bp)
+app.register_blueprint(shelter_bp)
+app.register_blueprint(report_bp)
 if __name__ == "__main__":
     app.run(debug=True)
